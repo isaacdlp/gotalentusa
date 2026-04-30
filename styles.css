@@ -200,6 +200,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .hero__inner {
   position: relative;
+  border: solid 2px var(--orange);
   border-radius: var(--radius-lg);
   overflow: hidden;
   min-height: 600px;
@@ -242,7 +243,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero__sub {
   font-size: 17px;
   color: rgba(255,255,255,0.65);
-  max-width: 480px;
+  max-width: 550px;
   margin-bottom: 40px;
   line-height: 1.7;
 }
@@ -355,7 +356,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .value__card {
   border-radius: var(--radius);
-  border: 1px solid var(--border-lt);
+  border: 2px solid var(--border-lt);
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(4px);
   overflow: hidden;
@@ -409,7 +410,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .service__card {
   background: var(--navy-card);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
@@ -539,7 +540,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .specialism {
   border-radius: var(--radius);
-  border: 1px solid var(--border-lt);
+  border: 2px solid var(--border-lt);
   background: rgba(255,255,255,0.92);
   overflow: hidden;
   transition: all var(--transition);
@@ -814,7 +815,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .contact__form {
   background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px;
 }
@@ -959,13 +960,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    RESPONSIVE
    ============================= */
 @media (max-width: 1080px) {
-  .hero__inner { display: block; }
+  .hero__inner { display: block; border: 0px; border-radius: 0px;}
   .hero__img-main { object-position: 70% 20%; }
   .about__inner { grid-template-columns: 320px 1fr; gap: 48px; }
   .contact__inner { grid-template-columns: 1fr; gap: 48px; }
   .process__inner { grid-template-columns: 1fr; gap: 40px; }
   .process__visual { max-width: 480px; }
 
+  .hero__sub { max-width: 400px; }
   .value__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1016,6 +1018,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .form__row { grid-template-columns: 1fr; }
   .contact__form { padding: 28px 20px; }
 
+  .hero__sub { max-width: 300px; }
   .value__grid { grid-template-columns: 1fr; }
   .services__grid { grid-template-columns: 1fr; gap: 20px; }
 }
