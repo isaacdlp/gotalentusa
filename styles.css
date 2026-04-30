@@ -640,7 +640,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   text-align: center;
   padding-top: 0px;
-  border-top: 1px solid rgba(255,255,255,0.08);
 }
 .about__footer .about__quote {
   border-left: none;
@@ -960,7 +959,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    RESPONSIVE
    ============================= */
 @media (max-width: 1080px) {
-  .hero__inner { display: block; border: 0px; border-radius: 0px;}
+  .hero__inner { display:block; margin: 10px; }
   .hero__img-main { object-position: 70% 20%; }
   .about__inner { grid-template-columns: 320px 1fr; gap: 48px; }
   .contact__inner { grid-template-columns: 1fr; gap: 48px; }
