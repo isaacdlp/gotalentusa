@@ -958,14 +958,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* =============================
    RESPONSIVE
    ============================= */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .hero__inner { display: block; }
   .hero__img-main { object-position: 70% 20%; }
   .about__inner { grid-template-columns: 320px 1fr; gap: 48px; }
   .contact__inner { grid-template-columns: 1fr; gap: 48px; }
-  .services__grid { grid-template-columns: 1fr; gap: 20px; }
   .process__inner { grid-template-columns: 1fr; gap: 40px; }
   .process__visual { max-width: 480px; }
+
+  .value__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1016,6 +1017,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .contact__form { padding: 28px 20px; }
 
   .value__grid { grid-template-columns: 1fr; }
+  .services__grid { grid-template-columns: 1fr; gap: 20px; }
 }
 
 @media (max-width: 480px) {
