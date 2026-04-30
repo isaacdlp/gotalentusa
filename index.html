@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Talent USA — Technology Recruitment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230D1B2A'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='18' font-family='Inter,sans-serif' font-weight='800' fill='%23E84517'%3EG%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <img src="images/logo.jpg" alt="Go Talent USA logo mark" />
+        <span class="nav__brand"><span class="nav__brand-go">Go</span> Talent USA</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#specialisms">Talent</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__ctas">
+        <a href="#contact" class="btn btn--outline">Start Hiring</a>
+        <a href="#contact" class="btn btn--primary">Find a Job</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+
+      <div class="hero__image-panel">
+        <img
+          src="images/team-collaboration.jpg"
+          alt="Technology professionals collaborating in a modern office"
+          class="hero__img-main"
+        />
+        <div class="hero__image-overlay"></div>
+      </div>
+
+      <div class="hero__text">
+        <div class="hero__badge">Data · AI · Analytics Recruitment</div>
+        <h1 class="hero__headline">
+          Powering the Future,<br />
+          <span class="highlight">One Hire at a Time.</span>
+        </h1>
+        <p class="hero__sub">
+          We connect technology-driven organizations with top-tier talent and guide professionals toward the careers they deserve.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Start Hiring</a>
+          <a href="#contact" class="btn btn--outline btn--lg">Find a Job</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">10+</span>
+            <span class="stat__label">Years Combined Expertise</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Specialist Focus</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">3</span>
+            <span class="stat__label">Core Service Offerings</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="value section" id="value">
+    <div class="value__bg-img"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section__label">Why Go Talent USA</div>
+      <h2 class="section__title">Technology recruitment built around your needs</h2>
+      <div class="value__grid">
+        <div class="value__card">
+          <div class="value__card-img">
+            <img src="images/team-collab.jpg" alt="" />
+          </div>
+          <div class="value__card-body">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Deep Specialist Knowledge</h3>
+            <p>We recruit exclusively in Data, AI, and Analytics — meaning every conversation starts with genuine market understanding, not a script.</p>
+          </div>
+        </div>
+        <div class="value__card">
+          <div class="value__card-img">
+            <img src="images/business-meeting.jpg" alt="" />
+          </div>
+          <div class="value__card-body">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Data-Driven Approach</h3>
+            <p>We bring operational discipline to every search — tracking market intelligence, pipeline data, and outcome metrics to drive better hiring decisions.</p>
+          </div>
+        </div>
+        <div class="value__card">
+          <div class="value__card-img">
+            <img src="images/team-working.jpg" alt="" />
+          </div>
+          <div class="value__card-body">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Relationship-First</h3>
+            <p>We invest in long-term partnerships — with clients who trust us to solve hard problems, and candidates we are genuinely committed to seeing succeed.</p>
+          </div>
+        </div>
+        <div class="value__card">
+          <div class="value__card-img">
+            <img src="images/group-final.jpg" alt="" />
+          </div>
+          <div class="value__card-body">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Consultative &amp; Transparent</h3>
+            <p>No noise, no volume for volume's sake. Honest advice, clear timelines, and talent solutions that genuinely move your business forward.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section section--dark" id="services">
+    <div class="container">
+      <div class="section__label section__label--light">What We Do</div>
+      <h2 class="section__title section__title--light">Three ways we can help</h2>
+      <div class="services__grid">
+
+        <div class="service__card">
+          <div class="service__card-img">
+            <img src="images/group-discussion.jpg" alt="Hiring and recruitment meeting" />
+            <div class="service__card-img-overlay"></div>
+          </div>
+          <div class="service__card-body">
+            <div class="service__number">01</div>
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3>Start Hiring</h3>
+            <p>Partner with us to find specialist Data, AI, and Analytics talent — from contract placements for immediate impact to strategic hires that shape your team's future.</p>
+            <ul class="service__list">
+              <li>Contract &amp; Contract-to-Hire</li>
+              <li>Permanent Placement</li>
+              <li>Niche &amp; Hard-to-Fill Roles</li>
+            </ul>
+            <a href="#contact" class="service__cta">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+
+        <div class="service__card">
+          <div class="service__card-img">
+            <img src="images/professional-woman.jpg" alt="Professional seeking a new career" />
+            <div class="service__card-img-overlay"></div>
+          </div>
+          <div class="service__card-body">
+            <div class="service__number">02</div>
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Find a Job</h3>
+            <p>We provide a personalized experience for professionals seeking their next move — with guidance, honest feedback, and support at every step of your journey.</p>
+            <ul class="service__list">
+              <li>Data Engineering &amp; Architecture</li>
+              <li>AI &amp; Machine Learning</li>
+              <li>Analytics &amp; Business Intelligence</li>
+            </ul>
+            <a href="#contact" class="service__cta">Explore opportunities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+
+        <div class="service__card">
+          <div class="service__card-img">
+            <img src="images/hiring-meeting.jpg" alt="Strategic business planning meeting" />
+            <div class="service__card-img-overlay"></div>
+          </div>
+          <div class="service__card-body">
+            <div class="service__number">03</div>
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Fractional Recruitment Support</h3>
+            <p>Access experienced recruitment leadership on a fractional basis — ideal for scaling teams, covering gaps, or driving complex hiring programmes without full-time overhead.</p>
+            <ul class="service__list">
+              <li>Embedded Talent Partnering</li>
+              <li>Hiring Strategy &amp; Process Design</li>
+              <li>Recruiter Mentorship &amp; Team Building</li>
+            </ul>
+            <a href="#contact" class="service__cta">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TALENT -->
+  <section class="specialisms section" id="specialisms">
+    <div class="container">
+      <div class="section__label">Our Focus Areas</div>
+      <h2 class="section__title">Specialist talent across the data ecosystem</h2>
+      <div class="specialisms__grid">
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/server-room.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h4>Data Engineering</h4>
+            <p>Pipelines, platforms, and the infrastructure powering modern data organisations.</p>
+          </div>
+        </div>
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/ai-technology.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12l8.5-8.5"/><path d="M17 2h5v5"/></svg>
+            </div>
+            <h4>Artificial Intelligence</h4>
+            <p>ML Engineers, AI Researchers, and LLM specialists driving transformation.</p>
+          </div>
+        </div>
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/analytics-dashboard.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h4>Analytics &amp; BI</h4>
+            <p>Analysts and BI Engineers who turn raw data into strategic decisions.</p>
+          </div>
+        </div>
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/laptop-workspace.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h4>Data Architecture</h4>
+            <p>Architects and platform leaders shaping enterprise-wide data strategies.</p>
+          </div>
+        </div>
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/coding-screen.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h4>Software Engineering</h4>
+            <p>Backend and full-stack engineers building data-intensive products and platforms.</p>
+          </div>
+        </div>
+
+        <div class="specialism">
+          <div class="specialism__img">
+            <img src="images/data-matrix.jpg" alt="" />
+          </div>
+          <div class="specialism__body">
+            <div class="specialism__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/><path d="M2 20h20"/></svg>
+            </div>
+            <h4>Data Science</h4>
+            <p>Scientists and quantitative modellers extracting insight from complex datasets.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section section--dark" id="about">
+    <div class="container about__inner">
+      <div class="about__image">
+        <div class="about__image-wrap">
+          <img src="store/Jose.jpeg" alt="Jose Gomez, Founder of Go Talent USA" />
+        </div>
+        <div class="about__image-accent"></div>
+      </div>
+      <div class="about__content">
+        <div class="section__label section__label--light">Meet the Founder</div>
+        <h2 class="section__title section__title--light">Jose Gomez</h2>
+        <div class="about__role">Founder, Go Talent USA</div>
+        <div class="about__bio">
+          <p>A recruitment leader with nearly a decade of experience building and scaling high-performing teams across Data, AI, and Software Engineering.</p>
+          <p>My background spans hands-on technical recruiting through senior leadership, giving me a deep, practical understanding of what it takes to deliver specialist talent in fast-moving, competitive markets.</p>
+          <p>I've partnered closely with founders, CTOs, and engineering leaders to solve niche hiring challenges — whether deploying contractors who can make an immediate impact, covering business-critical gaps, or creating long-term hiring strategies aligned to growth.</p>
+          <p>What sets me apart is a balance of operational discipline and human insight. I take a data-driven approach to recruitment strategy while staying deeply invested in relationships — building trust with clients, developing recruiters into top performers, and ensuring candidates are set up to succeed, not just placed.</p>
+        </div>
+      </div>
+      <div class="about__footer">
+        <blockquote class="about__quote">
+          "Contract recruitment should be consultative, transparent, and outcome-focused. No noise, no volume for volume's sake. Just expert delivery, honest advice, and talent solutions that genuinely move businesses forward."
+        </blockquote>
+        <a href="#contact" class="btn btn--primary">Work with Jose</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section" id="process">
+    <div class="process__bg-img"></div>
+    <div class="container process__inner">
+      <div class="process__visual">
+        <img
+          src="images/professionals-strategy.jpg"
+          alt="Professionals collaborating on a strategy"
+        />
+        <div class="process__visual-badge">
+          <span class="process__visual-num">4</span>
+          <span>Step Process</span>
+        </div>
+      </div>
+      <div class="process__body">
+        <div class="section__label">How It Works</div>
+        <h2 class="section__title">A straightforward process, every time</h2>
+        <div class="process__steps">
+          <div class="process__step">
+            <div class="process__num">1</div>
+            <div class="process__content">
+              <h4>Discovery</h4>
+              <p>We take time to genuinely understand your challenge — whether you're hiring or job-seeking — before making any recommendations.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <div class="process__num">2</div>
+            <div class="process__content">
+              <h4>Strategy</h4>
+              <p>We map the market, define the approach, and set clear expectations on timelines, candidate profiles, and what success looks like.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <div class="process__num">3</div>
+            <div class="process__content">
+              <h4>Delivery</h4>
+              <p>We execute with precision — sourcing, vetting, and presenting only the candidates who genuinely fit the brief.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <div class="process__num">4</div>
+            <div class="process__content">
+              <h4>Partnership</h4>
+              <p>We stay close after placement — supporting onboarding, gathering feedback, and investing in the long-term relationship.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="contact section section--dark" id="contact">
+    <div class="contact__bg-img"></div>
+    <div class="container contact__inner" style="position:relative;z-index:1;">
+      <div class="contact__left">
+        <div class="section__label section__label--light">Get in Touch</div>
+        <h2 class="section__title section__title--light">Ready to get started?</h2>
+        <p class="contact__sub">Whether you're looking to hire specialist talent or explore your next career move, we'd love to hear from you.</p>
+        <div class="contact__info">
+          <a href="mailto:jose@gotalentusa.com" class="contact__link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            jose@gotalentusa.com
+          </a>
+          <a href="https://www.linkedin.com/company/gotalentusa" target="_blank" rel="noopener" class="contact__link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="contact__right">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="type">I am looking to</label>
+            <select id="type" name="type" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="hire">Hire talent</option>
+              <option value="job">Find a job</option>
+              <option value="fractional">Explore fractional support</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Tell us about your needs</label>
+            <textarea id="message" name="message" rows="4" placeholder="Share a bit about what you're looking for..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <div class="form__success" id="formSuccess">
+            Thanks for reaching out — we'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo-wrap">
+          <img src="images/logo.jpg" alt="Go Talent USA logo mark" class="footer__logo" />
+          <span class="footer__brand"><span class="footer__brand-go">Go</span> Talent USA</span>
+        </div>
+        <p>Technology recruitment built around your needs. Specialist in Data, AI, and Analytics.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/gotalentusa" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Start Hiring</a></li>
+          <li><a href="#services">Find a Job</a></li>
+          <li><a href="#services">Fractional Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Talent</h5>
+        <ul>
+          <li><a href="#specialisms">Data Engineering</a></li>
+          <li><a href="#specialisms">Artificial Intelligence</a></li>
+          <li><a href="#specialisms">Analytics &amp; BI</a></li>
+          <li><a href="#specialisms">Data Architecture</a></li>
+          <li><a href="#specialisms">Software Engineering</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>&copy; 2026 Go Talent USA LLC. All rights reserved.</span>
+        <span>Powering the Future, One Hire at a Time.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
