@@ -158,9 +158,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: rgba(255,255,255,0.8);
   font-size: 14px;
   font-weight: 500;
-  transition: color var(--transition);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: color var(--transition), background var(--transition);
 }
-.nav__links a:hover { color: var(--white); }
+.nav__links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
 
 .nav__ctas { display: flex; gap: 12px; }
 .nav__ctas .btn--outline { border-color: rgba(255,255,255,0.4); padding: 8px 20px; font-size: 13px; }
@@ -345,7 +347,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background-image: url('images/open-office.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.06;
+  opacity: 0.1;
 }
 
 .value__grid {
@@ -532,6 +534,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* =============================
    TALENT (SPECIALISMS)
    ============================= */
+.specialisms {
+  position: relative;
+  overflow: hidden;
+}
+
+.specialisms__bg-img {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/team-laptops.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.specialisms .container {
+  position: relative;
+  z-index: 1;
+}
+
 .specialisms__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -564,7 +586,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .specialism:hover .specialism__img img { transform: scale(1.05); }
 
-.specialism__body { padding: 24px; }
+.specialism__body { 
+  padding: 24px; 
+  background-color: white;
+}
 
 .specialism__icon {
   width: 44px;
@@ -667,7 +692,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background-image: url('images/modern-office.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .process__inner {
@@ -760,15 +785,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .contact {
   position: relative;
   overflow: hidden;
-}
-
-.contact__bg-img {
-  position: absolute;
-  inset: 0;
-  background-image: url('images/team-laptops.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.04;
 }
 
 .contact__inner {
