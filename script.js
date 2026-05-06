@@ -52,21 +52,38 @@ fadeEls.forEach(el => observer.observe(el));
    ============================= */
 const form = document.getElementById('contactForm');
 const successMsg = document.getElementById('formSuccess');
+const errorMsg = document.getElementById('formError');
 
-form.addEventListener('submit', (e) => {
+function showMsg(el, duration = 5000) {
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), duration);
+}
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = form.querySelector('[type="submit"]');
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  // Simulate async send — replace with real endpoint when ready
-  setTimeout(() => {
-    form.reset();
+  try {
+    const res = await fetch('https://formspree.io/f/mzdovpko', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form),
+    });
+
+    if (res.ok) {
+      form.reset();
+      showMsg(successMsg);
+    } else {
+      showMsg(errorMsg);
+    }
+  } catch {
+    showMsg(errorMsg);
+  } finally {
     btn.textContent = 'Send Message';
     btn.disabled = false;
-    successMsg.classList.add('show');
-    setTimeout(() => successMsg.classList.remove('show'), 5000);
-  }, 900);
+  }
 });
 
 /* =============================
