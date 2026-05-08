@@ -108,3 +108,35 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach(s => sectionObserver.observe(s));
+
+/* =============================
+   TESTIMONIALS CAROUSEL
+   ============================= */
+(function () {
+  const slides = document.querySelectorAll('.testimonial__slide');
+  const thumbs = document.querySelectorAll('.testimonials__thumb');
+  let current = 0;
+  let autoTimer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    thumbs[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    thumbs[current].classList.add('active');
+  }
+
+  function startAuto() {
+    autoTimer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  thumbs.forEach((thumb, i) => {
+    thumb.addEventListener('click', () => {
+      clearInterval(autoTimer);
+      goTo(i);
+      startAuto();
+    });
+  });
+
+  startAuto();
+}());
